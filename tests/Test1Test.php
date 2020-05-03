@@ -2,7 +2,6 @@
 namespace TDDExample;
 
 use PHPUnit\Framework\TestCase;
-use stdClass;
 
 class Test1Test extends TestCase
 {
@@ -12,7 +11,7 @@ class Test1Test extends TestCase
     public function test1() : void
     {
         $pc = new Product();
-        $electronic = new stdClass();
+        $electronic = new Category();
         $pc->setCategory($electronic);
         $this->assertEquals($electronic, $pc->getCategory());
     }
