@@ -1,0 +1,16 @@
+{
+    "require-dev": {
+        "phpunit/phpunit": "^9.1",
+        "phpstan/phpstan": "^0.12.19"
+    },
+    "autoload": {
+      "psr-4": {
+        "TDDExample\\": "src/"
+      }
+    },
+    "autoload-dev": {
+      "psr-4": {
+        "TDDExample\\": "tests/"
+      }
+    }
+}
