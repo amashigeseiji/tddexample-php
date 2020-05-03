@@ -3,14 +3,15 @@ namespace TDDExample;
 
 class Product
 {
-    private $category;
+    private Category $category;
 
-    public function setCategory($category)
+    public function setCategory(Category $category) : void
     {
+        $category->addProduct($this);
         $this->category = $category;
     }
 
-    public function getCategory()
+    public function getCategory() : Category
     {
         return $this->category;
     }
